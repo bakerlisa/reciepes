@@ -1,9 +1,9 @@
-from flask import Flask, render_template,redirect,session,request,session,flash
 from flask_app import app
 
 #on/off switch: remener to put your controllers here
 # Server imporst entire file 
-from flask_app.controllers import user_controller, recipe_controller
+from flask_app.controllers import user_controller  
+from flask_app.controllers import recipe_controller
 
 @app.route('/<path:path>')
 def catch_all(path):
